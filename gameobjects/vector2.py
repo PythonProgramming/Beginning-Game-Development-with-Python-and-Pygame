@@ -23,8 +23,13 @@ class Vector2:
         
     def normalize(self):
         magnitude = self.get_magnitude()
-        self.x /= magnitude
-        self.y /= magnitude
+
+        try:
+            self.x /= magnitude
+            self.y /= magnitude
+        except ZeroDivisionError:
+            self.x = 0
+            self.y = 0
         
     def __add__(self, rhs):         
         return Vector2(self.x + rhs.x, self.y + rhs.y)
