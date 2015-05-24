@@ -3,7 +3,7 @@ from pygame.locals import *
 from sys import exit
 from gameobjects.vector2 import Vector2
 
-picture_file = 'map.jpg'
+picture_file = 'map.png'
 
 pygame.init()
 screen = pygame.display.set_mode((640, 480), 0, 32)
