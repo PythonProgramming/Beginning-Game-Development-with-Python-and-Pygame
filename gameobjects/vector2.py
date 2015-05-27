@@ -1,5 +1,5 @@
 from math import sqrt
-from gameobjects.util import format_number
+from util import format_number
 
 class Vector2(object):
 
@@ -54,7 +54,7 @@ class Vector2(object):
         @param iterable: An iterable of at least 2 numeric values
 
         """
-        next = iter(iterable).next
+        next = iter(iterable).__next__
         vec = cls.__new__(cls, object)
         vec._v = [float(next()), float(next())]
         return vec
@@ -271,7 +271,7 @@ class Vector2(object):
 
         return self.copy()
 
-    def __nonzero__(self):
+    def __bool__(self):
 
         x, y = self._v
         return bool(x or y)

@@ -1,5 +1,5 @@
 from math import *
-from gameobjects.util import format_number
+from util import format_number
 
 class Vector3(object):
 
@@ -693,7 +693,8 @@ if __name__ == "__main__":
     z = Vector3()
     print(z)
 
-
+    file("test.txt", "w").write( "\n".join(str(float(n)) for n in range(20)) )
+    f = file("test.txt")
     v1 = Vector3.from_iter( f )
     v2 = Vector3.from_iter( f )
     v3 = Vector3.from_iter( f )
