@@ -1,6 +1,6 @@
 import unittest
 
-from vector3 import Vector3
+from .vector3 import Vector3
 
 class TestVector3(unittest.TestCase):
 

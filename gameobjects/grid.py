@@ -1,6 +1,6 @@
 
-from locals import WRAP_REPEAT, WRAP_CLAMP, WRAP_ERROR
-from util import saturate
+from .locals import WRAP_REPEAT, WRAP_CLAMP, WRAP_ERROR
+from .util import saturate
 
 class Grid(object):
 

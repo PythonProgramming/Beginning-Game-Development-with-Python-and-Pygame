@@ -1,6 +1,6 @@
 
-from util import format_number
-from vector3 import Vector3
+from .util import format_number
+from .vector3 import Vector3
 
 from math import sin, cos, tan, sqrt, pi, radians
 

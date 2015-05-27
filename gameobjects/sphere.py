@@ -1,5 +1,5 @@
-import vector3
-from util import format_number
+from . import vector3
+from .util import format_number
 
 class Sphere(object):
     

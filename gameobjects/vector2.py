@@ -1,5 +1,5 @@
 from math import sqrt
-from util import format_number
+from .util import format_number
 
 class Vector2(object):
 
